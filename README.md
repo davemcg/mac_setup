@@ -14,7 +14,7 @@
     - cp ~/Downloads/ssh/* ~/.ssh
     - ssh-add -K
 
-# ~/.bash_profile
+# vim ~/.bash_profile
 ```
 # mcgaughey stuffs
 alias ls='ls -G'
@@ -25,6 +25,7 @@ shopt -s histappend
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 export HISTTIMEFORMAT="%y/%m/%d %T "
 ```
+then run `source ~/.bash_profile` to load 
 
 # System Preferences
   - Keyboard
