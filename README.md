@@ -13,6 +13,8 @@ ssh-add -K
     - Set keyboard repeat to max speed
     - Set keyboard delay to min wait
     - Use function keys as function keys (need to Hold "Fn" to get "special" functions
+    - Set Spotlight shortcut to option - space (use command - space for Quicksilver)
+    - Shorcuts -> click on "Use keyboard navigation to move focus..."
   - Trackpad
     - Tap to click on trackpad
   - General
@@ -23,4 +25,9 @@ ssh-add -K
 ## waiting on sudo/admin access!
 
 ## R (say 'N' if an offer of compiliation comes up)
-  - `install.packages(c('Seurat', 'tidyverse', 'pals',  'cowplot','sctransform','plotly','httr','igraph','leiden','lmtest','metap','uwot','RccpEigen'))`
+  - R/3.6 and Rstudio 1.2 (latest)
+  - `install.packages(c('Seurat', 'tidyverse', 'pals','ggforce','ggrepel','devtools',  'cowplot','sctransform','plotly','httr','igraph','leiden','lmtest','metap','uwot','RccpEigen'))`
+
+## brew
+  - https://brew.sh
+  - https://gist.github.com/irazasyed/7732946
