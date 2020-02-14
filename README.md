@@ -6,10 +6,10 @@
   - requires signatures from Brian Brooks and NEI SIO
   
 # SSH
-  - ## on old computer:
+  - on old computer:
     - cp -r ~/.ssh ~/Desktop/ssh
-  - ## AIRDROP TO NEW COMPUTER
-  - ## on new comp:
+  - `AirDrop` TO new computer
+  - on new comp:
     - cp ~/Downloads/ssh/* ~/.ssh
     - ssh-add -K
 
