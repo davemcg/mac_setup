@@ -4,6 +4,7 @@
 
   - Get "aa" account (email Michael Wright) to get admin/sudo permission
   - requires signatures from Brian Brooks and NEI SIO
+  - globus: https://hpc.nih.gov/storage/globus.html
   
 # SSH
   - on old computer:
@@ -29,6 +30,7 @@
 
   - R (say 'N' if an offer of compiliation comes up)
     - R/3.6 and Rstudio 1.2 (latest)
+      - Turn off workspace save in Rstudio
     - `install.packages(c('Seurat', 'tidyverse', 'pals','ggforce','ggrepel','devtools','blogdown',  'cowplot','sctransform','plotly','httr','igraph','leiden','lmtest','metap','uwot','RccpEigen'))`
 
   - brew
