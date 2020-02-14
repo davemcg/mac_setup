@@ -8,7 +8,7 @@
 # SSH
   - on old computer:
     - cp -r ~/.ssh ~/Desktop/ssh
-  - `AirDrop` TO new computer
+  - `AirDrop` to new computer
   - on new comp:
     - cp ~/Downloads/ssh/* ~/.ssh
     - ssh-add -K
