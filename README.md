@@ -1,8 +1,7 @@
-# Non-exhaustive list of steps to set up a new computer
+# Non-exhaustive list of steps to set up a new Mac
 
 # NIH specific
-
-  - Get "aa" account (email Michael Wright) to get admin/sudo permission
+  - Get "aa" account (email Michael Wright) forp get admin/sudo permission
   - requires signatures from Brian Brooks and NEI SIO
   - globus: https://hpc.nih.gov/storage/globus.html
   
@@ -41,6 +40,7 @@ then run `source ~/.bash_profile` to load
  
 # Install
 
+  - XQuartz: https://www.xquartz.org
   - R (say 'N' if an offer of compiliation comes up)
     - R/3.6 and Rstudio 1.2 (latest)
       - Turn off workspace save in Rstudio
