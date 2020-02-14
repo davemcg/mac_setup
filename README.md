@@ -14,6 +14,18 @@
     - cp ~/Downloads/ssh/* ~/.ssh
     - ssh-add -K
 
+# ~/.bash_profile
+```
+# mcgaughey stuffs
+alias ls='ls -G'
+alias ll='ls -ltrhcF'
+HISTSIZE=100000000
+HISTFILESIZE=10000000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export HISTTIMEFORMAT="%y/%m/%d %T "
+```
+
 # System Preferences
   - Keyboard
     - Set keyboard repeat to max speed
