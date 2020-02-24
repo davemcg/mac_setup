@@ -53,12 +53,14 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
     - R/3.6 and Rstudio 1.2 (latest)
       - Turn off workspace save in Rstudio
     - `install.packages(c('Seurat', 'tidyverse', 'pals','ggforce','ggrepel','devtools','blogdown',  'cowplot','sctransform','plotly','httr','igraph','leiden','lmtest','metap','uwot','RccpEigen'))`
+    - `BiocManager::install(c('monocle3', 'SingleCellExperiment','scran', 'scater', 'batchelor'))`
 
   - brew
     - https://brew.sh
     - Install failed this worked -> https://gist.github.com/irazasyed/7732946
     - Afterwards, install gcc so you can compile packages for R
       - `brew install gcc`
+    - `brew cask install keepingyouawake` # little menu bar GUI for caffeinate (prevent mac from sleeping)
 
   - SourceTree
 
