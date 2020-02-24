@@ -1,11 +1,11 @@
 # Non-exhaustive list of steps to set up a new Mac
 
 # NIH specific
-  - Get "aa" account (email Michael Wright) forp get admin/sudo permission
-  - requires signatures from Brian Brooks and NEI SIO
-  - globus: https://hpc.nih.gov/storage/globus.html
+  - Get "aa" account (email Michael Wright) to get admin/sudo permission
+  - requires signatures from boss (Brian Brooks) and NEI SIO
+  - Globus: https://hpc.nih.gov/storage/globus.html
   
-# SSH
+# Move over SSH keys
   - on old computer:
     - cp -r ~/.ssh ~/Desktop/ssh
   - `AirDrop` to new computer
@@ -57,6 +57,8 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
   - brew
     - https://brew.sh
     - Install failed this worked -> https://gist.github.com/irazasyed/7732946
+    - Afterwards, install gcc so you can compile packages for R
+      - `brew install gcc`
 
   - SourceTree
 
