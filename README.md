@@ -1,11 +1,6 @@
 # Non-exhaustive list of steps to set up a new Mac
-
-# NIH specific
-  - Get "aa" account (email Michael Wright) to get admin/sudo permission
-  - requires signatures from boss (Brian Brooks) and NEI SIO
-  - Globus: https://hpc.nih.gov/storage/globus.html
   
-# Move over SSH keys
+## Move over SSH keys
   - on old computer:
     - cp -r ~/.ssh ~/Desktop/ssh
   - `AirDrop` to new computer
@@ -13,13 +8,13 @@
     - cp ~/Downloads/ssh/* ~/.ssh
     - ssh-add -K
 
-# NFS Link to Arges NAS
+## NFS Link to Arges NAS
   - (no switch or intermediate network connection between the NAS and the desktop)
   - (on Arges), copy subnet and IP address, go into NFS share pref on Arges and make new IP address (use below on Mac)
   - (on Mac), System Preferences -> Network -> Ethernet -> Configure IPv4 "manually", set IP address, match subnet to Arges
   - `sudo mount -t nfs -o resvport,rw 10.1.1.ArgesAddress:/volume1/Arges /Volumes/Arges/`
   
-# vim ~/.bash_profile
+## vim ~/.bash_profile
 ```
 # mcgaughey stuffs
 alias ls='ls -G'
@@ -35,7 +30,7 @@ then run `source ~/.bash_profile` to load for session
 To get it to always load add `source ~/.bash_profile` to /etc/profile
 
 
-# System Preferences
+## System Preferences
   - Keyboard
     - Set keyboard repeat to max speed
     - Set keyboard delay to min wait
@@ -47,7 +42,7 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
   - General
     - Show Scroll Bars (always)
  
-# Install
+## Install
 
   - XQuartz: https://www.xquartz.org
   - R (say 'N' if an offer of compiliation comes up)
@@ -71,3 +66,8 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
     - fix word jump: https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x
     
   - TextMate: https://macromates.com
+  
+## NIH specific
+  - Get "aa" account (email Michael Wright) to get admin/sudo permission
+  - requires signatures from boss (Brian Brooks) and NEI SIO
+  - Globus: https://hpc.nih.gov/storage/globus.html
