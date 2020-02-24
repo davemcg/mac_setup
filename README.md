@@ -29,7 +29,10 @@ shopt -s histappend
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 export HISTTIMEFORMAT="%y/%m/%d %T "
 ```
-then run `source ~/.bash_profile` to load 
+then run `source ~/.bash_profile` to load for session
+
+To get it to always load add `source ~/.bash_profile` to /etc/profile
+
 
 # System Preferences
   - Keyboard
