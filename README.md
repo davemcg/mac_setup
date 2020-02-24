@@ -14,6 +14,7 @@
     - ssh-add -K
 
 # NFS Link to Arges NAS
+  - (no switch or intermediate network connection between the NAS and the desktop)
   - (on Arges), copy subnet and IP address, go into NFS share pref on Arges and make new IP address (use below on Mac)
   - (on Mac), System Preferences -> Network -> Ethernet -> Configure IPv4 "manually", set IP address, match subnet to Arges
   - `sudo mount -t nfs -o resvport,rw 10.1.1.ArgesAddress:/volume1/Arges /Volumes/Arges/`
@@ -62,7 +63,9 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
       - `brew install gcc`
     - `brew cask install keepingyouawake` # little menu bar GUI for caffeinate (prevent mac from sleeping)
 
-  - SourceTree
+  - SourceTree: https://www.sourcetreeapp.com
+  
+  - Quicksilver: https://qsapp.com
 
   - iTerm
     - fix word jump: https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x
