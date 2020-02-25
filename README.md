@@ -57,7 +57,7 @@ Add `source ~/.bash_profile` to /etc/profile
     - Afterwards, install `gcc` so you can compile packages for `R` (see below for instructions on how to get `R` to recognize `gcc`)
       - `brew install gcc`
     - `brew cask install keepingyouawake` # little menu bar GUI for caffeinate (prevent mac from sleeping)
-    - `brew cask install anaconda` and add `export PATH="/usr/local/anaconda3/bin:$PATH"` to `./bash_profile`
+    - `brew cask install anaconda` and add `export PATH="/usr/local/anaconda3/bin:$PATH"` to `~./bash_profile`
 
   - SourceTree: https://www.sourcetreeapp.com
   
