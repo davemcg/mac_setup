@@ -1,4 +1,4 @@
-# Non-exhaustive list of steps to set up a new Mac
+# Non-exhaustive list of steps to set up a new Mac (Catalina)
   
 ## Move over SSH keys
   - on old computer:
@@ -66,6 +66,23 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
     - fix word jump: https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x
     
   - TextMate: https://macromates.com
+  
+## Get `R` to recognize your `gcc`
+
+  - Install `R` and `gcc` as above (`brew` for `gcc`)
+  - Create `~/.R/Makevars` and use the below
+  - To find out which version of `gcc` you have check the `/usr/local/Cellar/gcc/`path and edit the top line `VER=-` and the bottom `FLIBS` line to match
+    ```
+    VER=-9
+    CC=gcc$(VER)
+    CXX=g++$(VER)
+    CXX11=g++$(VER)
+    CXX14=g++$(VER)
+    CXX17=g++$(VER)
+    CFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
+    CXXFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
+    FLIBS=-L/usr/local/Cellar/gcc/9.2.0_3/lib/gcc/9/
+    ```
   
 ## NIH specific
   - Get "aa" account (email Michael Wright) to get admin/sudo permission
