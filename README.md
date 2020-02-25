@@ -54,7 +54,7 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
   - brew
     - https://brew.sh
     - Install failed this worked -> https://gist.github.com/irazasyed/7732946
-    - Afterwards, install gcc so you can compile packages for R
+    - Afterwards, install `gcc` so you can compile packages for `R` (see below for instructions on how to get `R` to recognize `gcc`)
       - `brew install gcc`
     - `brew cask install keepingyouawake` # little menu bar GUI for caffeinate (prevent mac from sleeping)
 
