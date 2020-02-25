@@ -58,7 +58,8 @@ Add `source ~/.bash_profile` to /etc/profile
       - `brew install gcc`
     - `brew cask install keepingyouawake` # little menu bar GUI for caffeinate (prevent mac from sleeping)
     - `brew cask install anaconda` and add `export PATH="/usr/local/anaconda3/bin:$PATH"` to `~./bash_profile`
-
+    - `brew install tmux`
+    
   - SourceTree: https://www.sourcetreeapp.com
   
   - Quicksilver: https://qsapp.com
