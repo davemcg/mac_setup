@@ -49,7 +49,7 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
     - R/3.6 and Rstudio 1.2 (latest)
       - Turn off workspace save in Rstudio
     - `install.packages(c('Seurat', 'tidyverse', 'pals','ggforce','ggrepel','devtools','blogdown',  'cowplot','sctransform','plotly','httr','igraph','leiden','lmtest','metap','uwot','RccpEigen'))`
-    - `BiocManager::install(c('monocle3', 'SingleCellExperiment','scran', 'scater', 'batchelor'))`
+    - `BiocManager::install(c('BiocGenerics', 'DelayedArray', 'DelayedMatrixStats', 'limma', 'S4Vectors', SingleCellExperiment', 'SummarizedExperiment', 'batchelor', 'scran', 'scater', 'batchelor'))`
 
   - brew
     - https://brew.sh
@@ -61,6 +61,7 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
   - SourceTree: https://www.sourcetreeapp.com
   
   - Quicksilver: https://qsapp.com
+    - Enable clipboard for copy/paste history save (https://qsapp.com/manual/Clipboard%20and%20Shelf/)
 
   - iTerm
     - fix word jump: https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x
