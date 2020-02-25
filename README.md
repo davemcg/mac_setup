@@ -2,11 +2,11 @@
   
 ## Move over SSH keys
   - on old computer:
-    - cp -r ~/.ssh ~/Desktop/ssh
+    - `cp -r ~/.ssh ~/Desktop/ssh`
   - `AirDrop` to new computer
   - on new comp:
-    - cp ~/Downloads/ssh/* ~/.ssh
-    - ssh-add -K
+    - `cp ~/Downloads/ssh/* ~/.ssh`
+    - `ssh-add -K`
 
 ## NFS Link to Arges NAS
   - (no switch or intermediate network connection between the NAS and the desktop)
@@ -15,6 +15,7 @@
   - `sudo mount -t nfs -o resvport,rw 10.1.1.ArgesAddress:/volume1/Arges /Volumes/Arges/`
   
 ## vim ~/.bash_profile
+The `[HIST|hist]` stuffs is to get the history to be saved across sessions/windows/tabs. 
 ```
 # mcgaughey stuffs
 alias ls='ls -G'
@@ -25,9 +26,8 @@ shopt -s histappend
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 export HISTTIMEFORMAT="%y/%m/%d %T "
 ```
-then run `source ~/.bash_profile` to load for session
 
-To get it to always load add `source ~/.bash_profile` to /etc/profile
+Add `source ~/.bash_profile` to /etc/profile
 
 
 ## System Preferences
@@ -44,14 +44,14 @@ To get it to always load add `source ~/.bash_profile` to /etc/profile
  
 ## Install
 
-  - XQuartz: https://www.xquartz.org
-  - R (say 'N' if an offer of compiliation comes up)
-    - R/3.6 and Rstudio 1.2 (latest)
-      - Turn off workspace save in Rstudio
+  - `XQuartz`: https://www.xquartz.org
+  - `R` (say 'N' if an offer of compiliation comes up)
+    - `R/3.6` and `Rstudio 1.2` (latest)
+      - **Turn off workspace save in Rstudio**
     - `install.packages(c('Seurat', 'tidyverse', 'pals','ggforce','ggrepel','devtools','blogdown',  'cowplot','sctransform','plotly','httr','igraph','leiden','lmtest','metap','uwot','RccpEigen'))`
     - `BiocManager::install(c('BiocGenerics', 'DelayedArray', 'DelayedMatrixStats', 'limma', 'S4Vectors', SingleCellExperiment', 'SummarizedExperiment', 'batchelor', 'scran', 'scater', 'batchelor'))`
 
-  - brew
+  - `brew`
     - https://brew.sh
     - Install failed this worked -> https://gist.github.com/irazasyed/7732946
     - Afterwards, install `gcc` so you can compile packages for `R` (see below for instructions on how to get `R` to recognize `gcc`)
